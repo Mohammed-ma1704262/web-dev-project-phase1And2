@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+<!-- logos dont work for some reason -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"> -->
+     
+      
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    
+    <header>
+       <div class="logo">
+       <img src="images/Logo.png" alt="Logo" width="150">
+    </div>
+   <div class="nav">
+     <ul>
+       <li><a href="#">Schedule</a></li>
+       <li><a href="#">Events</a></li>
+     </ul>
+   </div>
+   <div class="login">
+     <a href="/login.html">Login</a>
+   </div>
+   </header>
+
+       <main>
+       <div class="welcome">
+     <img src="images/WelcomeImage.png" alt="Background Image">
+     <h1>You are Reviewing paper</h1>
+       </main>
+
+       <div class="review card">
+        <img src="images/human-rights.jpg" alt="Example Image" class="card-image">
+           <div class="card-content">
+          <h3 class="card-title">human rights</h3>
+       <p class="card-text">Lorem ipsum dolor sit amet
+         consectetur adipisicing elit. Est explicabo ea vero 
+         veniam quisquam sit at, cum reprehenderit. Tenetur 
+         accusamus quo modi voluptas nam aliquam ipsa deserunt est doloremque autem?</p>
+        </div>
+       </div>
+
+       <div>
+
+        <fieldset>
+            <legend><b>Experience</b>:</legend>
+            <p for="your-review">Your review:</p>
+            <div class="form-group">
+                <label for="your-review"></label>
+                <textarea id="your-review" name="previous-jobs" rows="20" cols="70" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Your Rating</b></legend>
+            <div class="form-group">
+                <label for="rating">How Did you find the paper?:</label>
+                <input type="text" id="rating" name="rating" list="rating-list" required>
+            </div>
+            <datalist id="rating-list">
+                <option value="0: I didn't find this paper useful">
+                <option value="1: I strongly disagree with what is inside the paper">
+                <option value="2: I disagree with what is inside the paper">
+                <option value="3: I don't agree or disagree with what is inside the paper">
+                <option value="4: I agree with what is inside the paper">
+                <option value="5: I Strongly agree with what is inside the paper">
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Agreements:</b></legend>
+            <input type="checkbox" id="agree1" name="agreement" value="agree" required>
+            <label for="agree1">I confirm the information provided above is accurate</label> <br>
+            <input type="checkbox" id="agree2" name="agreement" value="agree">
+            <label for="agree2">I consent for using my Data For improvment puposes</label>
+        </fieldset>
+
+        <input type="submit">
+    </form>
+       </div>
+
+<footer>
+    <div class="contactUs">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+        <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+      </div>
+  </footer>
+
+  
+</body>
+</html>

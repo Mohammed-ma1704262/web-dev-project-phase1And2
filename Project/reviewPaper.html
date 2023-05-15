@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+<!-- logos dont work for some reason -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"> -->
+     
+      
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    
+    <header>
+       <div class="logo">
+       <img src="images/Logo.png" alt="Logo" width="150">
+    </div>
+   <div class="nav">
+     <ul>
+       <li><a href="#">Schedule</a></li>
+       <li><a href="#">Events</a></li>
+     </ul>
+   </div>
+   <div class="login">
+     <a href="reviewPaper.html">Review a paper</a>
+   </div>
+   </header>
+
+       <main>
+       <div class="welcome">
+     <img src="images/WelcomeImage.png" alt="Background Image">
+     <h1>Please rate this paper</h1>
+       </div>
+      
+
+       
+
+       <form>
+        
+      
+          <div>
+            <label for="overall-evaluation"><b><u>Overall Evaluation</u></b></label><br>
+            <input type="radio" id="-2 Strong reject" name="overall-evaluation" value="-2">
+            <label for="-2 Strong reject">-2 Strong reject</label><br>
+            <input type="radio" id="-1 Reject" name="overall-evaluation" value="-1">
+            <label for="-1 Reject">-1 Reject</label><br>
+            <input type="radio" id="0 Borderline" name="overall-evaluation" value="0">
+            <label for="0 Borderline">0 Borderline</label><br>
+            <input type="radio" id="1 Accept" name="overall-evaluation" value="1">
+            <label for="1 Accept">1 Accept</label><br>
+            <input type="radio" id="2 Strong Accept" name="overall-evaluation" value="2">
+            <label for="2 Strong Accept">2 Strong Accept</label><br><br>
+          </div>
+      
+          <div>
+            <label for="paper-contribution"><b><u>Paper Contribution</u></b></label><br>
+            <input type="radio" id="1 No obvious contribution" name="paper-contribution" value="1">
+            <label for="1 No obvious contribution">1 No obvious contribution</label><br>
+            <input type="radio" id="2 No obvious contribution" name="paper-contribution" value="2">
+            <label for="2 No obvious contribution">2 No obvious contribution</label><br>
+            <input type="radio" id="3 Minor contribution" name="paper-contribution" value="3">
+            <label for="3 Minor contribution">3 Minor contribution</label><br>
+            <input type="radio" id="4 A clear contribution" name="paper-contribution" value="4">
+            <label for="4 A clear contribution">4 A clear contribution</label><br>
+            <input type="radio" id="5 A major and significant contribution" name="paper-contribution" value="5">
+            <label for="5 A major and significant contribution">5 A major and significant contribution</label><br><br>
+          </div>
+
+
+        <label for="paper-strengths"><b><u>Paper Strengths</u></b></label><br>
+        <textarea id="paper-strengths" name="paper-strengths" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="paper-weaknesses"><b><u>Paper Weaknesses</u></b></label><br>
+        <textarea id="paper-weaknesses" name="paper-weaknesses" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" id="submit-btn"  value="Submit">
+      </form>
+    </main>
+
+<footer>
+    <div class="contactUs">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+        <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+      </div>
+  </footer>
+
+  <script type ="module" src="js/rate.js"></script>
+</body>
+</html>
