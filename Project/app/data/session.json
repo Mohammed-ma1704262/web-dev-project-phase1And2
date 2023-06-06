@@ -1,0 +1,17 @@
+[
+    {
+      "id":1,
+      "title": "first conference",
+      "location": "BCR",
+      "date": "2023-11-01T7:00:00.000Z"
+    },
+
+    {
+      "id":2,
+      "title": "Second conference",
+      "location": "H07",
+      "date": "2023-11-02T8:00:00.000Z"
+    }
+   
+]
+
