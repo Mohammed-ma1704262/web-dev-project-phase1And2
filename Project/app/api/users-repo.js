@@ -62,7 +62,7 @@ export default class UsersRepo {
         console.log('getUser called');
         const user = await prisma.users.findUnique({
             where: {
-                id: userID
+                id: +userID
             }
         })
 
@@ -96,7 +96,7 @@ export default class UsersRepo {
 
     async getSession(SessionID) {
         try {
-            return await prisma.session.findUnique({where:{id:SessionID}})
+            return await prisma.session.findUnique({where:{id:+SessionID}})
         } catch (error) {
             console.log(error);
             return { error: error.message }
