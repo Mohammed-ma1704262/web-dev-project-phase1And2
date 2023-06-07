@@ -2,7 +2,6 @@ import { log } from 'console'
 import fs from 'fs-extra'
 import { nanoid } from 'nanoid'
 import path from 'path'
-//import { AccountType } from '@prisma/client'
 
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
@@ -13,18 +12,7 @@ export default class UsersRepo {
     }
 
     async getUsers() {
-        try {
-            // await this.getOwners()
-            // await this.getAvgBalance()
-            // this.deleteOwner("dfghfrjki756gh")
-            // const owners = await this.searchOwner('J D')
-            // this.getTrans('rsfrg2fprksfrg2fpt', '2021-05-16T10:00:00.000Z', '2021-11-17T10:00:00.000Z')
-            // await this.getMinMaxBalance()
-            // await this.getTransSum('rsfrg2fprksfrg2fpt', '2021-05-16T10:00:00.000Z', '2021-11-17T10:00:00.000Z')
-            // await this.getTop3Accounts()
-            //await this.getOwnerReport('ckockkdifg2fpt')
-                
-            
+        try {  
             return await prisma.users.findMany()
         }
         catch (err) {
