@@ -8,8 +8,6 @@ self.__RSC_CSS_MANIFEST={
     ]
   },
   "cssModules": {
-    "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page": [
-      "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page.module.css"
-    ]
+    "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page": []
   }
 }

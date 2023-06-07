@@ -82,7 +82,6 @@ export default class UsersRepo {
             console.log(err);
             return "Unable to delete user because it does not exist"
         }
-
     }
 
     async getSessions() {
@@ -99,6 +98,17 @@ export default class UsersRepo {
             return await prisma.session.findUnique({where:{id:+SessionID}})
         } catch (error) {
             console.log(error);
+            return { error: error.message }
+        }
+    }
+
+    async addSession(session) {
+        try {
+            const newSession = await prisma.session.create({
+                data: session
+            })
+            return newSession
+        } catch (error) {
             return { error: error.message }
         }
     }

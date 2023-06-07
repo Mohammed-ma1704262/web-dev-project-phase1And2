@@ -1,5 +1,7 @@
 //import './globals.css'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,11 +12,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"></link>
+    <link rel="stylesheet" href="./css/styles.css"></link>
       </head>
       <body>
         <NavBar></NavBar>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   )
