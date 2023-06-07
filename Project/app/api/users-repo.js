@@ -48,7 +48,7 @@ export default class UsersRepo {
     async updateUser(user, userID) {
         console.log('updateUser called', userID);
         const updatedUser = await prisma.users.update({
-            where: { userID },
+            where: { id:+userID },
             data: user
         })
 
@@ -74,7 +74,7 @@ export default class UsersRepo {
         try {
             const count = await prisma.users.delete({
                 where: {
-                    id: userID
+                    id: +userID
                 }
             })
             return "deleted successfully"
@@ -105,7 +105,7 @@ export default class UsersRepo {
     async updateSession(session, sessionID) {
         console.log('updateSession called', sessionID);
         const updatedSession = await prisma.session.update({
-            where: { sessionID },
+            where: { id:+sessionID },
             data: session
         })
 
@@ -117,7 +117,7 @@ export default class UsersRepo {
 
     async deleteSession(sessionID) {
         try {
-            const count = await prisma.session.delete({ where: { id: sessionID } })
+            const count = await prisma.session.delete({ where: { id: +sessionID } })
 
             console.log("DELETE Session: ", count);
             return "deleted successfully"
