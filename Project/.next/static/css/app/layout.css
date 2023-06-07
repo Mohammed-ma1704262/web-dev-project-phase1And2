@@ -1,0 +1,268 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./app/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/* Form styling */
+.page_form__KxpXI {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c9e6ff;
+  margin: 1em auto 0 auto;
+  max-width: 500px;
+  padding: 1em;
+}
+
+.page_form__KxpXI select,
+.page_form__KxpXI input {
+  border: 1px solid #c9e6ff;
+}
+
+.page_form__KxpXI button {
+  border: none;
+  padding: 1em;
+  background: #0069ed;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.page_form__KxpXI button:hover,
+.page_form__KxpXI button:focus {
+  background: #0053ba;
+}
+
+.page_form__KxpXI button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.page_form__KxpXI button:active {
+  transform: scale(0.99);
+}
+
+.page_label__pwU7t,
+.page_form__KxpXI label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.page_formGroup__brmhi {
+  display: flex;
+}
+
+.page_formGroup__brmhi>* {
+  flex: 1 1;
+  margin: 10px;
+}
+
+.page_dropdown__atpSD select,
+.page_form__KxpXI input {
+  padding: 0.7em;
+  margin: 0.5rem 0;
+}
+
+.page_dropdown__atpSD select:focus,
+.page_form__KxpXI input:focus {
+  outline: 2px solid royalblue;
+}
+
+.page_addAccount__iSdOy {
+  float: right;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.4rem;
+
+}
+
+.page_addAccount__iSdOy:hover {
+  color: blue;
+}
+
+@media (min-width: 700px) {
+  .page_form__KxpXI form {
+    grid-template-columns: auto 1fr;
+    grid-gap: 16px;
+  }
+
+  .page_form__KxpXI button {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+
+  .page_nav__SoR8z div {
+    flex-direction: row;
+  }
+
+  .page_nav__SoR8z li:last-child {
+    border-bottom: 1px white solid;
+  }
+
+  .page_nav__SoR8z ul {
+    display: flex;
+    flex: 1 1;
+    /*justify-content: flex-end;*/
+    align-items: center;
+  }
+
+  .page_main__WunS6 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Nav Bar styling */
+.page_nav__SoR8z ul li:first-child {
+  margin-right: auto;
+}
+
+.page_nav__SoR8z ul li {
+  display: inline;
+  padding: 5px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.page_nav__SoR8z ul li a:hover {
+  color: dodgerblue;
+  text-decoration: overline;
+}
+
+.page_nav__SoR8z ul li.page_selected__VLF1m a {
+  color: dodgerblue;
+  text-decoration: overline;
+}
+
+.page_title__jaD8y {
+  text-align: center;
+}
+
+/* table styling */
+.page_table__NWF7L {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.page_table__NWF7L td,
+.page_table__NWF7L th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.page_table__NWF7L .page_table__NWF7L tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.page_table__NWF7L tr:hover {
+  background-color: #ddd;
+}
+
+.page_table__NWF7L th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0069ed;
+  color: white;
+}
+
+/*
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background: aqua;
+
+}
+nav div{
+  display: flex;
+  flex-direction: column;
+}
+nav ul{
+  align-self: center;
+}
+nav img {
+  width: 200px;
+  height: 60px;
+}
+
+nav li {
+  list-style: none;
+  text-decoration: none;
+  margin: 10px;
+  font-family: "Helvetica";
+  letter-spacing: 2px;
+  border-bottom: 1px white solid;
+}
+
+.drop-down{
+  display: flex;
+}
+.drop-down select{
+  height: 40px;
+  font-size: large;
+}
+
+#drop-down{
+  flex: 1;
+}
+
+#accounts {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#accounts td, #accounts th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#accounts tr:nth-child(even){background-color: #f2f2f2;}
+
+#accounts tr:hover {background-color: #ddd;}
+
+#accounts th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.fa-trash, fa-pen{
+  color: red;
+  font-size: 1.5em;
+  background-color: rgba(242, 242, 242, 0.2);
+}
+label , input , select{
+  font-size: large;
+
+  margin: 10px;
+}
+
+.button {
+  background-color: #4CAF50; !* Green *!
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.submit{
+  background: #288eff;
+}
+@media (min-width: 900px) {
+
+
+}*/

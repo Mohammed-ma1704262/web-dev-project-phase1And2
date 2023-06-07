@@ -1,4 +1,15 @@
 {
-  "cssImports": {},
-  "cssModules": {}
+  "cssImports": {
+    "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page.js": [
+      "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/node_modules/next/font/google/target.css?{\"path\":\"app/page.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/layout.js": [
+      "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page.module.css"
+    ]
+  },
+  "cssModules": {
+    "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page": [
+      "/Users/hsn-1993 1/Desktop/CMPS350/web-dev-project-phase1And2/Project/app/page.module.css"
+    ]
+  }
 }
